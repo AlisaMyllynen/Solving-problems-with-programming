@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lost & Found</title>
+    <style>
+      body { font-family: Arial, sans-serif; max-width: 800px; margin: 2rem auto; padding: 0 1rem; }
+      header { display:flex; justify-content:space-between; align-items:center; }
+      .card { border:1px solid #ddd; padding:1rem; margin:0.5rem 0; border-radius:6px }
+      form input, form textarea { display:block; width:100%; margin:0.4rem 0; padding:0.5rem }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1><a href="/">Lost & Found</a></h1>
+      <nav><a href="/report">Report lost item</a></nav>
+    </header>
+    <main>
+      {% block content %}{% endblock %}
+    </main>
+  </body>
+</html>

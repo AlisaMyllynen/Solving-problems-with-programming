@@ -1,0 +1,11 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+  <h2>{{ item.title }}</h2>
+  <small>Reported: {{ item.created }}</small>
+  <p><strong>Description:</strong> {{ item.description or '—' }}</p>
+  <p><strong>Location:</strong> {{ item.location or '—' }}</p>
+  <p><strong>Date lost:</strong> {{ item.date_lost or '—' }}</p>
+  <p><strong>Contact:</strong> {{ item.contact or '—' }}</p>
+  <p><a href="/">Back</a></p>
+{% endblock %}

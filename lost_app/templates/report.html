@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+  <h2>Report a lost item</h2>
+  {% if error %}
+    <div style="color: red">{{ error }}</div>
+  {% endif %}
+  <form method="post">
+    <label>Title</label>
+    <input name="title" required />
+    <label>Description</label>
+    <textarea name="description"></textarea>
+    <label>Location</label>
+    <input name="location" />
+    <label>Date lost</label>
+    <input name="date_lost" placeholder="YYYY-MM-DD" />
+    <label>Contact</label>
+    <input name="contact" placeholder="email or phone" />
+    <button type="submit">Submit</button>
+  </form>
+{% endblock %}
